@@ -24,6 +24,7 @@ readFile(path).then((response) => {
     }
     console.log(" the state name is = " + response[0].State + " \n state's population is least = " + response[0].Population)
     console.log(" the state name is = " + response[response.length - 1].State + " \n state's population is highest = " + response[response.length - 1].Population)
+    console.log(" the AreaInSqKm is = " + response[0].AreaInSqKm + " \n state's population is least = " + response[0].Population)
     for (let i = 0; i < response.length - 1; i++) {
         if (response[i].State === "Uttar Pradesh") {
             console.log("the population of Uttar Pradesh is = " + response[i].Population)
